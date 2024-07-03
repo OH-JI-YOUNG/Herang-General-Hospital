@@ -1,0 +1,372 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img, video, iframe{
+    vertical-align: middle;
+}
+body{
+    font-family: 'Hallym';
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000;
+    min-width:1450px;
+}
+/*header*/
+#header{
+    border-bottom: 1px solid #EAEAEA;
+}
+.header_inner{
+    width: 1320px;
+    margin: 37px auto;
+
+}
+.header_inner>ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_inner ul li{
+    width: 250px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.header_inner ul li:hover>a{
+    color: #165AFF;
+}
+.header_inner ul li:nth-child(5){
+    position: relative;
+}
+
+.sub{
+    position: absolute;
+    top:50px;
+    left: 0;
+    width: 100%;
+    display: none;
+    /*제이쿼리로 서브메뉴 슬라이드 할 때는, sub가 안보이게 까지만 css로 설정한다. 보이게 하는것은 제이쿼리로 설정한다.*/
+}
+.sub li a{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding:10px 0;
+    text-align: center;
+}
+
+
+/*page1*/
+#page1{
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+.card{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    /*가운데 이미지의 높이에 따라 아래 위 패딩 조정해주세요!*/
+}
+
+.swiper-slide img{
+    width: 100%;
+    cursor: pointer;
+}
+.swiper-button-prev {
+    left: -70px;
+    right: auto;
+    color: #165AFF;
+}
+
+.swiper-button-next{
+    right: -70px;
+    left: auto;
+    color: #165AFF;
+}
+/*높이가 다른 슬라이드들을 세로 가운데가 맞게 해줌*/
+.card .swiper-wrapper{
+    align-items: center;
+    
+}
+/*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. */
+.card .swiper-slide{
+    background-color: #fff;
+    transform: scale(0.5);
+    flex-shrink: 0;
+    
+}
+.card .swiper-slide-prev{
+    transform: scale(1);
+    z-index: 5;
+}
+.card .swiper-slide-next{
+    transform: scale(1);
+    z-index: 5;
+}
+.card .swiper-slide-active{
+    transform: scale(2.0);
+    z-index: 10;
+   transition: all 0.3s;
+    
+}
+.page1_text{
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 56px;
+}
+.page1_text h1{
+    font-size: 40px;
+
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.page1_text h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: #A8A8A8;
+}
+/*page2*/
+#page2{
+    margin-top: 200px;
+}
+.page2_inner{
+    width: 1320px;
+    margin: 0 auto;
+}
+.page2_inner h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 150px;
+}
+.menu {
+    width: 1320px;
+    margin: 0 auto;
+  }
+  
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+  
+.tabs li span {
+    display: block;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 23px;
+    width: 259px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+/*검색창*/
+.searchtag{
+    height: 200px;
+    text-align: center;
+}
+
+.search__input {
+        padding: 12px 24px;
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 28px;
+        line-height: 40px;
+        
+        color: #000;
+        background-color: transparent;
+/*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+ 
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 3px solid  #78BFFB;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
+
+.search__input::placeholder {
+            color: rgba(87, 87, 86, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+.search__input:hover,
+        .search__input:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #575756;
+            border-radius: 0;
+            background-position: 100% center;
+        }
+
+  
+/*지금 클릭한 tab부분을 나타내는 클래스는 li에 active라는 이름으로 붙는다.*/
+.tabs li.active span {
+    border-bottom: 5px solid #78BFFB;
+
+  }
+
+.tab_container{
+    width: 1170px;
+    height: 882px;
+    margin-top: 80px;
+    margin: 0 auto;
+    margin-bottom: 186px;
+}
+.tab_content ul{
+    display: flex;
+    font-size: 20px;
+    justify-content: left;
+    align-items: center;
+    padding: 35px;
+    border-bottom: 1px solid #B5B5B5;
+ 
+}
+.tab_content .first{
+    border-top: 2px solid #646464;
+}
+.tab_content ul li p{
+    color: #fff;
+    font-weight: 500;
+    background-color: #78BFFB;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 242px;
+    height: 56px;
+    text-align: center;
+    margin-left: 22px;
+    margin-right: 77px;
+}
+.tab_content ul li a{
+    font-weight: 400;
+}
+
+/*footer*/
+#footer{
+    background-color: #333333;
+}
+.footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 35px 0;
+    position: relative;
+}
+.footer_inner>ul{
+    display: flex;
+}
+.footer_inner>ul li{
+    padding-right: 10px;
+    color: #C9C9C9;
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer_text h1{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #C9C9C9;
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer_text h1 span{
+    color: #fff;
+}
+.footer_text h3{
+    color: #C9C9C9;
+    font-size: 18px;
+}
+.footer_text .email {
+    padding-top: 25px;
+}
+.footer_left_1{
+    display: flex;
+    color:#C9C9C9;
+    padding-top: 10px;
+    font-size: 16px;
+}
+.footer_left_1 li{
+    padding-right: 20px;
+}
+.footer_left_2{
+    display: flex;
+    color:#C9C9C9;
+    padding-top: 10px;
+    font-size: 16px;
+}
+.footer_left_2 li{
+    padding-right: 15px;
+}
+.footer_icon{
+    position: absolute;
+    top: 46px;
+    right: 0px;
+}
+.footer_icon ul{
+    display: flex;
+    align-items: center;
+}
+.footer_icon ul li{
+    width: 211px;
+    height: 263px;
+    text-align: center;
+    background-color: #707070;
+    margin-left: 30px;
+    padding-top: 37px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.footer_icon ul li h2{
+    font-weight: 500;
+}
+.footer_icon ul li h3{
+    font-weight: 400;
+}
+.today img{
+    padding: 20px 0;
+}
+.weekend img{
+    padding: 20px 0;
+}
+
+.lunch img{
+    padding: 16px 0;
+}
+.footer_right{
+    position: absolute;
+    bottom: 81px;
+    right: 0;
+}
+.right_text{
+    display: flex;
+    justify-content: right;
+}
+.right_text li{
+    padding-left: 15px;
+}
+.right_text li a{
+    color: #C9C9C9;
+    font-weight: 500;
+    font-size: 16px;
+}
+.right_icon{
+    display: flex;
+    justify-content: right;
+}
+.right_icon li {
+    padding-left: 20px;
+    padding-top: 25px;
+}

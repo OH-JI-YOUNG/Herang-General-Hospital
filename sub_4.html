@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>해랑종합병원</title>
+    <link href="https://webfontworld.github.io/hallym/Hallym.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/favicon/favicon.png" type="image/x-icon">
+    <!--에오스 CND-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <!--슬라이드-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/sub_style4.css">
+     <!--제이쿼리 라이브러리파일-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+       <!--검색창-->
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+   
+
+</head>
+<body>
+    <div id="header">
+      <div class="header_inner">
+        <!--가운데정렬-->
+        <ul class="gnb">
+            <li><a href="./sub_1.html">진료예약</a></li>
+            <li><a href="./sub_2.html">진료과/의료진</a></li>
+            <li><a href="./index.html"><img src="./image/logo/main_logo.png" alt="로고이미지"></a></li>
+            <li><a href="./sub_3.html">검사/클리닉</a></li>
+            <li><a href="./sub_5.html">병원소개</a>
+                <ul class="sub">
+                    <li><a href="./sub_5.html">브랜드 스토리</a></li>
+                    <li><a href="./sub_4.html">해랑 이야기</a></li>
+                  </ul>
+            </li>
+        </ul>
+        </div><!--header_inner-->
+    </div><!--header-->
+        <div id="page1" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="0">
+            <!--마진오토-->
+                <div class="swiper card"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+                    <div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+                        <div class="swiper-slide">
+                            <!--swiper-slide는 필수 클래스-->
+                            <img src="./image/ytube/ytube (1).png" alt="유튜브링크1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/ytube/ytube (2).png" alt="유튜브링크2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/ytube/ytube (3).png" alt="유튜브링크3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/ytube/ytube (4).png" alt="유튜브링크4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/ytube/ytube (5).png" alt="유튜브링크5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/ytube/ytube (6).png" alt="유튜브링크6">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/ytube/ytube (7).png" alt="유튜브링크7">
+                        </div>
+                    </div>
+
+                </div><!--mb E-->  
+                <!--화살표추가-->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="page1_text">
+                    <h1>오늘의 Hot Topic</h1>
+                    <h3>해랑종합병원의 새로운 소식을 만나보세요.</h3>
+                </div><!--page1_text-->
+    </div><!--page1-->
+    <div id="page2">
+        <div class="page2_inner">
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">해랑이야기</h1>
+            <div class="menu" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                <div class="wrapper">
+                  <!--탭 메뉴 영역(우리가 실제로 클릭할 부분)
+                  각각의 li안에 a태그의 아이디를 가진 tab이 보이는 원리이다.
+                  -->
+                  <ul class="tabs">
+                    <li><span tabs="#tab1">전체</span></li>
+                    <li><span tabs="#tab2">공지사항&병원소식</span></li>
+                    <li><span tabs="#tab3">이벤트</span></li>
+                    <li><span tabs="#tab4">해랑미디어</span></li>
+                    <li><span tabs="#tab5">칭찬&개선사항</span></li>
+                  </ul>
+                  <div class="searchtag">
+                    <div class="search__container">
+                        <input class="search__input" type="text" placeholder="검색하기">
+                    </div> 
+                </div><!--searechtag-->
+                  <!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+                  <div class="tab_container">
+                    <div id="tab1" class="tab_content">
+                      <!--Content-->
+                      <ul class="first">
+                        <li><p>공지사항&병원소식</p></li>
+                        <li><a href="#none">5월 20일부터 건강보험 본인확인 안내 </a></li>
+                      </ul>
+                      <ul>
+                        <li><p>공지사항&병원소식</p></li>
+                        <li><a href="#none">요양기관 본인확인 강화제도 안내</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>이벤트</p></li>
+                        <li><a href="#none">어버이날 카네이션 증정 이벤트</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>이벤트</p></li>
+                        <li><a href="#none">부처님 오신날 떡 나눔</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>해랑미디어</p></li>
+                        <li><a href="#none">[보도자료] 암 클리닉의 효과</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>해랑미디어</p></li>
+                        <li><a href="#none">[보도자료] 관절 척추 관리 </a></li>
+                      </ul>
+                      <ul>
+                        <li><p>칭찬&개선사항</p></li>
+                        <li><a href="#none">5월의 친절인 발표</a></li>
+                      </ul>
+                    </div><!--content-->
+            
+                    <div id="tab2" class="tab_content">
+                      <!--Content-->
+                      <ul class="first">
+                        <li><p>공지사항&병원소식</p></li>
+                        <li><a href="#none">5월 20일부터 건강보험 본인확인 안내 </a></li>
+                      </ul>
+                      <ul>
+                        <li><p>공지사항&병원소식</p></li>
+                        <li><a href="#none">요양기관 본인확인 강화제도 안내</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>공지사항&병원소식</p></li>
+                        <li><a href="#none">비급여 항목 업데이트</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>공지사항&병원소식</p></li>
+                        <li><a href="#none">2024년 하계방학 대학생 자원봉사자 모집 안내</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>공지사항&병원소식</p></li>
+                        <li><a href="#none">2024년 상반기 신규 약품 사용 신청 접수 안내</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>공지사항&병원소식</p></li>
+                        <li><a href="#none">24년 6월 의료정보시스템 정기점검 안내 </a></li>
+                      </ul>
+                      <ul>
+                        <li><p>공지사항&병원소식</p></li>
+                        <li><a href="#none">24년 7월 휴무일 안내</a></li>
+                      </ul>
+                    </div><!--content-->
+                    <div id="tab3" class="tab_content">
+                        <ul class="first">
+                            <li><p>이벤트</p></li>
+                            <li><a href="#none">먹고싶은 거 적어보기 이벤트</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>이벤트</p></li>
+                            <li><a href="#none">어린이날 장난감 증정 이벤트</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>이벤트</p></li>
+                            <li><a href="#none">어버이날 카네이션 증정 이벤트</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>이벤트</p></li>
+                            <li><a href="#none">부처님 오신날 떡 나눔</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>이벤트</p></li>
+                            <li><a href="#none">6월 현충일 이벤트 안내</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>이벤트</p></li>
+                            <li><a href="#none">선생님들의 특별 선물</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>이벤트</p></li>
+                            <li><a href="#none">일상속 편지 전달</a></li>
+                          </ul>
+                        </div><!--content-->
+                    <div id="tab4" class="tab_content">
+                      <!--Content-->
+                      <ul class="first">
+                        <li><p>해랑미디어</p></li>
+                        <li><a href="#none">3월 유튜브 라이브 방송 일정발표</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>해랑미디어</p></li>
+                        <li><a href="#none">4월 유튜브 라이브 방송 일정발표</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>해랑미디어</p></li>
+                        <li><a href="#none">5월 유튜브 라이브 방송 일정발표</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>해랑미디어</p></li>
+                        <li><a href="#none">[보도 자료]당뇨의 진실</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>해랑미디어</p></li>
+                        <li><a href="#none">[보도자료] 암 클리닉의 효과</a></li>
+                      </ul>
+                      <ul>
+                        <li><p>해랑미디어</p></li>
+                        <li><a href="#none">[보도자료] 관절 척추 관리 </a></li>
+                      </ul>
+                      <ul>
+                        <li><p>해랑미디어</p></li>
+                        <li><a href="#none">[보도자료] 성인병의 예방</a></li>
+                      </ul>
+                    </div><!--content-->
+                    <div id="tab5" class="tab_content">
+                        <!--Content-->
+                        <ul class="first">
+                            <li><p>칭찬&개선사항</p></li>
+                            <li><a href="#none">항상 수고해주시는 선생님들께</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>칭찬&개선사항</p></li>
+                            <li><a href="#none">3얼의 익명의 편지</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>칭찬&개선사항</p></li>
+                            <li><a href="#none">3월의 친절인 발표</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>칭찬&개선사항</p></li>
+                            <li><a href="#none">4월의 익명의 편지</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>칭찬&개선사항</p></li>
+                            <li><a href="#none">4월의 친절인 발표</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>칭찬&개선사항</p></li>
+                            <li><a href="#none">5월의 익명의 편지</a></li>
+                          </ul>
+                          <ul>
+                            <li><p>칭찬&개선사항</p></li>
+                            <li><a href="#none">5월의 친절인 발표</a></li>
+                          </ul>
+                        </div><!--content-->
+                  </div><!--tab_container-->
+                </div><!--warpper-->
+              </div><!--menu-->
+
+        </div><!--page2_inner-->
+    </div><!--page2-->
+
+
+
+
+
+
+
+
+
+       <!--footer-->
+       <div id="footer">
+        <div class="footer_inner">
+            <ul class="footer_left">
+                <li>진료 안내</li>
+                <li><img src="./image/etc/footer_line1.png" alt="푸터라인"></li>
+            </ul><!--footer_left-->
+            <div class="footer_text">
+                <h1>TEL <span>051-1234-5678</span></h1>
+                <h3>FAX 051-1234-9999</h3>
+                <h3>응급실 051-8282-8282</h3>
+                <h3 class="email">E-mail heranghospital@gmail.com</h3>
+                <img src="./image/etc/footer_line2.png" alt="푸터라인2">
+                <p class="footer_logo"><img src="./image/logo/footer_logo.png" alt="로고화이트"></p>
+                <ul class="footer_left_1">
+                    <li>OO시 OO구 OO로 123</li>
+                    <li>사업자등록번호:777-77-77777</li>
+                </ul><!--footer_left_1-->
+                <ul class="footer_left_2">
+                    <li>
+                        의료기관명칭: 의료법인 해랑의료재단 해랑종합병원
+                    </li>
+                    <li>
+                        <img src="./image/etc/footer_dot.png" alt="구분점">
+                    </li>
+                    <li>대표자명 : 신해랑</li>
+                    <li>©해랑종합병원</li>
+                </ul><!--footer_left_2-->
+            </div><!--footer_text-->
+            <div class="footer_icon">
+                <ul>
+                    <li class="today">
+                        <h2>평일</h2>
+                        <img src="./image/icon/clock_icon.png" alt="평일아이콘">
+                        <h2>9시~18시</h2>
+                        <h3>(접수 마감 17시 30분)</h3>
+                    </li>
+                    <li class="weekend">
+                        <h2>주말</h2>
+                        <img src="./image/icon/white_reservation_icon.png" alt="주말아이콘">
+                        <h2>10시~17시</h2>
+                        <h3>(접수 마감 16시 30분)</h3>
+                    </li>
+                    <li class="lunch">
+                        <h2>점심시간</h2>
+                        <img src="./image/icon/lunch_icon.png" alt="점심아이콘">
+                        <h2>13시~14시</h2>
+                        <h3>(접수 마감 12시 30분)</h3>
+                    </li>
+                </ul>
+            </div><!--footer_icon-->
+            <div class="footer_right">
+                <ul class="right_text">
+                    <li><a href="#none">비급여항목</a></li>
+                    <li><img src="./image/etc/footer_dot.png" alt="구분점"></li>
+                    <li><a href="#none">이용약관</a></li>
+                    <li><img src="./image/etc/footer_dot.png" alt="구분점"></li>
+                    <li><a href="#none">개인정보처리방침</a></li>
+                </ul><!--right_text-->
+                <ul class="right_icon">
+                    <li><a href="#none"><img src="./image/icon/footer_facebook.png" alt="푸터페이스북"></a></li>
+                    <li><a href="#none"><img src="./image/icon/footer_kakaotalk.png" alt="푸터카카오톡"></a></li>
+                    <li><a href="#none"><img src="./image/icon/footer_instar.png" alt="푸터인스타"></a></li>
+                    <li><a href="#none"><img src="./image/icon/footer_ytube.png" alt="유투브"></a></li>
+                </ul><!--right_icon-->
+            </div><!--footer_right-->
+        </div><!--footer_inner-->
+    </div><!--footer-->
+
+
+ 		<!-- Initialize Swiper -->
+         <script>
+            
+            
+            var swiper = new Swiper(".card", {
+              navigation: {
+                   nextEl: ".swiper-button-next",
+                   prevEl: ".swiper-button-prev",
+                  },//화살표를 작동하게 하는 옵션.
+                 autoplay: {
+                         delay: 2000,
+                         /*이미지가 자동으로 넘어가는 시간설정. 1000 = 1초*/
+                         disableOnInteraction: false,
+                     },
+                    speed:500,
+                    loop: true,
+                    slidesPerView: 3,
+                    centeredSlides:true,
+                    spaceBetween: 0,
+            });//지우면 안되요!
+          
+          </script>
+              <!--에오스-->
+              <script>
+                AOS.init();
+              </script>
+          <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/script_4.js"></script>
+         
+</body>
+</html>
