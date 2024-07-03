@@ -72,12 +72,6 @@ body{
     margin: 0 auto;
     overflow: hidden; /* 필요시 추가 */
     }
-#canvas{
-    width: 100%;
-    display: block;
-
-    
-}
 
 #page2{
     margin-top: 76px;
