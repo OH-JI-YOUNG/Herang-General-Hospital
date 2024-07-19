@@ -1080,11 +1080,12 @@ body{
     .title{
         font-size: 20px;
         text-align: center;
+        padding-bottom: 15px;
     }
     .subtitle{
         font-size: 15px;
         text-align: center;
-        padding-top: 11px;
+        padding: 0 20px;
         padding-bottom: 20px;
     }
     #page1 .blue{
@@ -1140,7 +1141,7 @@ body{
         width: 100%;
     }
     .page3_inner{
-        width: 90%;
+        width: 80%;
     }
     .title_box{
         padding-top: 100px;
@@ -1345,10 +1346,10 @@ body{
     
     /*TOP*/
     #top a{
-    font-size: 18px;
-    padding: 15px 0;
-    width: 60px;
-    }
+        font-size: 15px;
+        padding: 16px 0;
+        width: 59px;
+        }
     /*모달*/
     .modal {
     width: 250px;
@@ -1363,11 +1364,9 @@ body{
 @media (max-width: 437px){
     .name{width: 76%;}
     .phonenumber{width: 76%;}
-    .service li a .service_text{
-        padding: 0px 8px;
-    }
     .service_text p {
         font-size: 10px;
+
     }
 }
 
@@ -1416,9 +1415,9 @@ body{
     }
     /*TOP*/
     #top a{
-    font-size: 18px;
-    padding: 15px 0;
-    width: 60px;
+    font-size: 15px;
+    padding: 16px 0;
+    width: 59px;
     }
     /*모달*/
     .modal {
