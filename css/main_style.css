@@ -1153,7 +1153,7 @@ body{
     }
     .service li a .service_text{
         height: 30px;
-        padding: 0px 20px;
+        padding: 0px 15px;
         background-color: #191919;
         color: #fff;
     }
@@ -1165,7 +1165,7 @@ body{
         border-radius: 5px;
     }
     .service_text p{
-        font-size: 10px;
+        font-size: 12px;
     }
     #page4{
         width: 100%;
@@ -1360,11 +1360,14 @@ body{
         font-size: 18px;
     }
 }
-@media (max-width:437px){
+@media (max-width: 437px){
     .name{width: 76%;}
     .phonenumber{width: 76%;}
-    .service_text p{
-        font-size: 8px;
+    .service li a .service_text{
+        padding: 0px 8px;
+    }
+    .service_text p {
+        font-size: 10px;
     }
 }
 
