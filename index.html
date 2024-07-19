@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1450">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>해랑종합병원</title>
     <link href="https://webfontworld.github.io/hallym/Hallym.css" rel="stylesheet">
     <!--AOS CND-->
@@ -25,7 +25,8 @@
         <ul class="gnb">
             <li><a href="./sub_1.html">진료예약</a></li>
             <li><a href="./sub_2.html">진료과/의료진</a></li>
-            <li><a href="./index.html"><img src="./image/logo/main_logo.png" alt="로고이미지"></a></li>
+            <li class="pc"><a href="./index.html"><img src="./image/logo/main_logo.png" alt="로고이미지"></a></li>
+            <li class="notpc"><a href="./index.html"><img src="./image/logo/main_white.png" alt="로고이미지2"></a></li>
             <li><a href="./sub_3.html">검사/클리닉</a></li>
             <li><a href="./sub_5.html">병원소개</a>
                 <ul class="sub">
@@ -225,6 +226,7 @@
         <div class="fast_inner">
             <!--가운데 정렬-->
             <h1>빠른 상담 문의</h1>
+            <div class="total_box">
             <div class="fast_box1">
                 <p>이름</p>
                 <form action="#">
@@ -263,6 +265,7 @@
                     </p>
                 </form>
             </div><!--fast_box2-->
+        </div><!--total_box-->
         </div><!--fast_inner-->
     </div><!--fast_consulting-->
     <div id="footer">
@@ -277,11 +280,13 @@
                 <h3>응급실 051-8282-8282</h3>
                 <h3 class="email">E-mail heranghospital@gmail.com</h3>
                 <img src="./image/etc/footer_line2.png" alt="푸터라인2">
+                <div class="Mobile">
                 <p class="footer_logo"><img src="./image/logo/footer_logo.png" alt="로고화이트"></p>
                 <ul class="footer_left_1">
                     <li>OO시 OO구 OO로 123</li>
                     <li>사업자등록번호:777-77-77777</li>
                 </ul><!--footer_left_1-->
+                </div><!--mobile-->
                 <ul class="footer_left_2">
                     <li>
                         의료기관명칭: 의료법인 해랑의료재단 해랑종합병원
@@ -330,7 +335,7 @@
                     <li><a href="#none"><img src="./image/icon/footer_ytube.png" alt="유투브"></a></li>
                 </ul><!--right_icon-->
             </div><!--footer_right-->
-        </div><!--footer_inner-->s
+        </div><!--footer_inner-->
     </div><!--footer-->
     <div id="top">
         <a href="#header">TOP</a>
@@ -358,6 +363,27 @@
         </ul>
      </div><!--menu-->
 
+     <!--햄부기-->
+    <div id="ham">
+     <div class="slide-open" id="slide-open">
+        <span class="burgur" id="burgur">
+              <span class="top-line"></span>
+              <span class="bot-line"></span>
+           </span>
+   </div><!--slide-open-->
+   <div class="slide" id="slide">
+        <ul>
+            <li><a href="./sub_1.html">진료예약</a></li>
+            <li><a href="./sub_2.html">진료과/의료진</a></li>
+            <li><a href="./sub_3.html">검사/클리닉</a></li>
+            <li><a href="./sub_4.html">해랑 이야기</a></li>
+            <li><a href="./sub_5.html">브랜드 소개</a></li>
+        </ul>
+       </div><!--slide-->
+    </div><!--ham-->
+
+
+
            <!-- Modal -->
 <div class="modal-wrapper">
     <div class="modal">
@@ -375,6 +401,8 @@
   </div><!--modal-wrap-->
     
 
+  <!--햄부기-->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <!--슬라이드 및 js 파일-->
     <script>
         AOS.init();
