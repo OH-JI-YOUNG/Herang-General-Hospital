@@ -1165,7 +1165,7 @@ body{
         border-radius: 5px;
     }
     .service_text p{
-        font-size: 12px;
+        font-size: 10px;
     }
     #page4{
         width: 100%;
@@ -1363,6 +1363,9 @@ body{
 @media (max-width:437px){
     .name{width: 76%;}
     .phonenumber{width: 76%;}
+    .service_text p{
+        font-size: 8px;
+    }
 }
 
 
