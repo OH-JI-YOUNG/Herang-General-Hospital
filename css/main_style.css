@@ -824,7 +824,7 @@ body{
 		/*메뉴부분 모양*/
 		.slide{
 			padding-top:50px;
-			width:50%;/*이 너비에 따라 보이는 부분이 변화함*/
+			width:100%;/*이 너비에 따라 보이는 부분이 변화함*/
 			position:fixed;
 			right:-100%;
 			top:0;
@@ -836,6 +836,7 @@ body{
 			-o-transition: right .3s;
 			transition: right .3s;
 			background-color:#3F76ff;
+            text-align: center;
 		}
 		.slide-title{
 			width:100%;
@@ -852,7 +853,7 @@ body{
 		.slide ul li{
 			display:inline-block;
 			width:100%;
-			padding:10px 20px;
+			padding:15px 0;
 		}
         .slide>ul>li>a{
             color: #fff;
@@ -1139,7 +1140,7 @@ body{
         width: 100%;
     }
     .page3_inner{
-        width: 100%;
+        width: 90%;
     }
     .title_box{
         padding-top: 100px;
@@ -1304,20 +1305,38 @@ body{
         margin-bottom: 20px;
     }
     .Mobile{
+        text-align: center;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
     .footer_left_1{
         font-size: 12px;
         display: block;
-        padding-right: 50px;
+        width: 100%;
     }
     .footer_left_1 li{
         padding-bottom: 10px;
         padding-right: 0;
     }
+    .footer_left_2 li{
+        padding-bottom: 10px;
+        padding-right: 0;
+    }
+    .footer_left_2 li img{
+        display: none;
+    }
+    .footer_left_2 .no{
+        display: none;
+    }
     .footer_left_2{
+        padding-top: 0;
+        display: block;
+        text-align: center;
         font-size: 9px;
+        flex-wrap: wrap;
+        
     }
     
     
