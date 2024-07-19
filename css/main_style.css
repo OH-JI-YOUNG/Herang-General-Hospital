@@ -1222,6 +1222,7 @@ body{
         padding-top: 20px;
     }
     .total_box{
+        width: 448px;
         flex-wrap: wrap;
         justify-content: left;
         width: 100%;
@@ -1233,6 +1234,9 @@ body{
     .fast_box2{
         width: 100%;
     }
+    .fast_box1 form {
+        width: 100%;
+    }
     .name{
         width: 100%;
     }
@@ -1241,8 +1245,7 @@ body{
     }
 
     .phonenumber{
-        width: 100%;
-    }
+        width: 100%;}
 
     .fast_box1 p{
         font-size: 14px;
@@ -1357,6 +1360,12 @@ body{
         font-size: 18px;
     }
 }
+@media (max-width:437px){
+    .name{width: 76%;}
+    .phonenumber{width: 76%;}
+}
+
+
 @media(min-width:800px) and (max-width:1030px){
     .fast_text{
         width: 100%;
