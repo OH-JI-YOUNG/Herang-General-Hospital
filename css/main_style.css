@@ -90,6 +90,7 @@ body{
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
 }
 .page1text{
     width: 585px;
@@ -1231,22 +1232,28 @@ body{
     }
     .fast_box1{
         margin-right: 0px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .fast_box2{
         width: 100%;
+        box-sizing: border-box;
     }
     .fast_box1 form {
         width: 100%;
     }
     .name{
         width: 100%;
+        box-sizing: border-box;
     }
     .fast_text{
         width: 100%;
     }
 
     .phonenumber{
-        width: 100%;}
+        width: 100%;
+        box-sizing: border-box;
+    }
 
     .fast_box1 p{
         font-size: 14px;
@@ -1268,6 +1275,10 @@ body{
     }
     .fast_box1 ul li button{
         font-size: 14px;
+    }
+    .personal{
+        width: 100%;
+        flex-wrap: wrap;
     }
     /*footer*/
     #footer{
@@ -1362,8 +1373,14 @@ body{
     }
 }
 @media (max-width: 437px){
-    .name{width: 76%;}
-    .phonenumber{width: 76%;}
+    .name{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .phonenumber{
+        width: 100%;
+        box-sizing: border-box;
+    }
     .service_text p {
         font-size: 10px;
 
